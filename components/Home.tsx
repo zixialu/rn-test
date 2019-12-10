@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Layout, Text } from '@ui-kitten/components';
+import Things from './Things';
 
-export default class HelloWorld extends Component {
+export default class Home extends Component {
   render() {
     return (
       <Layout
         style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+        level="4"
       >
-        <Text category="h1">Hello, world!</Text>
+        <Things />
       </Layout>
     );
   }

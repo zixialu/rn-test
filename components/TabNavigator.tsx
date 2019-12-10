@@ -2,7 +2,7 @@ import React from 'react';
 import { createAppContainer, SafeAreaView } from 'react-navigation';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 import { TabBar, Tab } from '@ui-kitten/components';
-import HelloWorld from './HelloWorld';
+import Home from './Home';
 import Storybook from '../storybook';
 
 const TabBarComponent = ({ navigation }) => {
@@ -22,7 +22,7 @@ const TabBarComponent = ({ navigation }) => {
 }
 
 const AppView = () => (
-  <HelloWorld />
+  <Home />
 )
 
 const StorybookView = () => (
