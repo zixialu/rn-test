@@ -9,6 +9,17 @@ interface GalleryProps {
 
 const Gallery = (props: GalleryProps): React.ReactElement => {
   const { rowSize, elements } = props;
+
+  const styles = StyleSheet.create({
+    galleryContainer: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    },
+    galleryItem: {
+      width: `${100 / rowSize}%`,
+    }
+  });
+
   return (
     <Layout style={styles.galleryContainer} level="3">
       {elements.map(el => (
@@ -19,15 +30,5 @@ const Gallery = (props: GalleryProps): React.ReactElement => {
     </Layout>
   )
 };
-
-const styles = StyleSheet.create({
-  galleryContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  galleryItem: {
-    width: '50%',
-  }
-});
 
 export default Gallery;

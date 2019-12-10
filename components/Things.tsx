@@ -4,14 +4,14 @@ import { Layout, Card, Text } from '@ui-kitten/components';
 import Gallery from './Gallery';
 
 const Things = () => {
-  const things = Array(10).fill(null).map((_, idx) => (
+  const things = Array(9).fill(null).map((_, idx) => (
     <Card style={styles.thingCard} appearance="outline">
       <Text category="h3" key={idx}>Aa {idx}</Text>
     </Card>
   ));
 
   return (
-    <Gallery rowSize={2} elements={things} />
+    <Gallery rowSize={3} elements={things} />
   );
 }
 
